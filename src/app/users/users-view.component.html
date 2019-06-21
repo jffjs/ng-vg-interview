@@ -9,13 +9,15 @@
       <th>Last Name</th>
       <th></th>
     </tr>
+  </thead>
+
   <tbody>
     <tr *ngFor="let user of users">
-      <td>{{user.id}}</td>
-      <td>{{user.firstName}}</td>
-      <td>{{user.lastName}}</td>
+      <td>{{ user.id }}</td>
+      <td>{{ user.firstName }}</td>
+      <td>{{ user.lastName }}</td>
       <td>
-        <button type="button" class="btn btn-danger" (click)="handleDelete(user)"> <i class="fa fa-trash"></i></button>
+        <button type="button" class="btn btn-danger" (click)="handleDelete(user)">Delete</button>
       </td>
     </tr>
   </tbody>
