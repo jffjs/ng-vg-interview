@@ -38,5 +38,8 @@ export class UsersViewComponent {
     this.users = this.users.filter((user: User) => {
       return user.id !== userToDelete.id;
     });
+
+    // const idx = this.users.findIndex(user => user.id === userToDelete.id);
+    // this.users.splice(idx, 1);
   }
 }
